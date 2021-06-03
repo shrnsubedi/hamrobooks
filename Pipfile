@@ -14,9 +14,14 @@ pillow = "*"
 gunicorn = "==19.9.0"
 whitenoise = "==4.1.4"
 psycopg2-binary = "*"
+python-environ = 0.4.54
+flake8==3.9.1
+isort==5.8.0
+black==21.4b1
 
 [requires]
 python_version = "3.7"
+
 
 [pipenv]
 allow_prereleases = true
