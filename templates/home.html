@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+<div class="banner">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to Hamrobooks!!</h1>
+    <p class="lead">
+      "Hamrobooks is a online book buying and sharing platform where you can
+      post your old books for sale or search for a book that you may be wiling
+      to buy. You can post your speak on a book that you may be interested in. 
+      The platform only provides a medium for two parties to express
+      interest, no actual transaction is done through the site. 
+      "
+    </p>
+    <p class='lead'>This site is purely educational. It is built using Django Web Framework with PostgreSQL as the database.
+    </p>
+    <hr class="my-4" />
+    <p>Click on the link below to go to the books page and start browsing.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'book_list' %}" role="button"
+      >Books Page</a
+    >
+  </div>
+</div>
+
+{% endblock content %}
