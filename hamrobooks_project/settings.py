@@ -137,7 +137,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Media Files
-MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+MEDIA_ROOT = env("MEDIA_ROOT")
 MEDIA_URL = "/media/"
 
 # Custom User Model authentication override
