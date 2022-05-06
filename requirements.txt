@@ -8,3 +8,4 @@ python-environ
 flake8
 isort
 black
+wait-for-it
