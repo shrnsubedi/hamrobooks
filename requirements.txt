@@ -1,0 +1,10 @@
+django
+django-crispy-forms
+pillow
+gunicorn
+whitenoise
+psycopg2-binary
+python-environ
+flake8
+isort
+black

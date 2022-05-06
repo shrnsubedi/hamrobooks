@@ -52,12 +52,12 @@
     </div>
     {% if user.is_authenticated %}
     {% comment %} if the current session user is equal to the posted user display edit links {% endcomment %}
-      {%ifequal book.posted user%}
-    <div class="card-footer">
-        <a class="btn btn-warning" href="{% url 'book_edit' book.pk%}">Edit</a> |
-        <a class="btn btn-danger" href="{% url 'book_delete' book.pk%}">Delete</a>
-    </div>
-      {% endifequal %}
+      {%if book.posted == user%}
+        <div class="card-footer">
+            <a class="btn btn-warning" href="{% url 'book_edit' book.pk%}">Edit</a> |
+            <a class="btn btn-danger" href="{% url 'book_delete' book.pk%}">Delete</a>
+        </div>
+      {% endif%}
     {% endif %}
   </div>
   <hr>
