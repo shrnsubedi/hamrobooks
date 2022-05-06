@@ -51,7 +51,7 @@ This site is purely educational. It is built using Django Web Framework with Pos
 
 <br/>
 
-7. Configure the .env.sample file ( hamrobooks_project/.env.sample):
+7. Create a .env file ( hamrobooks_project/.env):
 
    ```
        These options are obtained while configuring the databse (Required)
@@ -68,7 +68,7 @@ This site is purely educational. It is built using Django Web Framework with Pos
        SECRET_KEY=
    ```
 
-   _After configuration rename .env.sample to .env and save_
+   _After configuration save the file_
 
 <br/>
 

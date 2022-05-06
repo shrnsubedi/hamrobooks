@@ -32,7 +32,6 @@ class Book(models.Model):
     published = models.DateField(auto_now_add=False)
     image = models.ImageField(upload_to="books")
     genre = models.CharField(max_length=50, choices=BOOK_CHOICES, default="None")
-    # details about the book ad
     book_condition = models.CharField(
         max_length=50, choices=BOOK_CONDITION, default="Used"
     )
@@ -50,7 +49,7 @@ class Book(models.Model):
     def imageURL(self):
         try:
             url = self.image.url
-        except:
+        except Exception:
             url = "static/placeholder.jpg"
         return url
 
