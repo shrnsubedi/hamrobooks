@@ -85,8 +85,6 @@ This site is purely educational. It is built using Django Web Framework with Pos
    (venv)$ python manage.py loaddata cms/fixtures/organization.json
    ```
 
-   This creates a user with username: johndoe and password: r24Sf34f@D2. Use that to login
-
 10. Run the localserver and visit ( 127.0.0.1:8000 )
 
 ```bash
